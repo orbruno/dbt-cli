@@ -1,0 +1,18 @@
+[project]
+name = "dbt-cli"
+version = "0.1.0"
+description = "dbt CLI wrapper with PostgreSQL and BigQuery adapters"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dbt-core>=1.8.0",
+    "dbt-postgres>=1.8.0",
+    "dbt-bigquery>=1.8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
